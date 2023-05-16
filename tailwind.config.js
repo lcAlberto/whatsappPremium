@@ -4,9 +4,36 @@ export default {
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
-  theme: {
-    extend: {},
+  theme: {},
+  plugins: [
+    require("daisyui"),
+    require("@tailwindcss/typography")
+  ],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+
+          "primary": "#3057F2",
+
+          "secondary": "#FFBB3A",
+
+          "accent": "#37CDBE",
+
+          "neutral": "#3D4451",
+
+          "base-100": "#FFFFFF",
+
+          "info": "#3ABFF8",
+
+          "success": "#36D399",
+
+          "warning": "#FBBD23",
+
+          "error": "#F87272",
+        },
+      },
+    ],
   },
-  plugins: [],
 }
 
