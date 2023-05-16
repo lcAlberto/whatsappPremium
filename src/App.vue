@@ -1,26 +1,22 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+<script setup lang="js">
+import Sidebar from "./components/Sidebar.vue";
+import Content from "./components/Content.vue";
+import DefaultFooter from "./components/Footer.vue";
 </script>
 
 <template>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-
-  <HelloWorld msg="Vite + Vue" />
+  <div class="flex bg-base-50 p-0">
+    <sidebar />
+    <div class="flex flex-col flex-1">
+      <main class="h-full mx-auto px-3 w-full">
+        <div class="py-4 mx-auto">
+          <content />
+        </div>
+      </main>
+      <default-footer />
+    </div>
+  </div>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
 </style>
