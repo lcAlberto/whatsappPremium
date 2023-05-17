@@ -25,7 +25,11 @@ function toggleMessage() {
     >
       <div class="prose px-5">
         <img
-          :src="success ? '../../static/check-circle.png' : '../../static/whatsapp.png'" class="my-0" />
+          v-if="success"
+          src="../assets/img/check-circle.png" class="my-0" />
+        <img
+          v-else
+          src="../assets/img/whatsapp.png" class="my-0" />
         <h2 class="text-h2 my-3 font-cerebri">
           {{ title }}
         </h2>
@@ -35,7 +39,7 @@ function toggleMessage() {
         <custom-button v-if="!success" @success="toggleMessage" />
       </div>
       <div>
-        <img src="../../static/Home - Whatsapp.png" class="w-96" />
+        <img src="../assets/img/Home - Whatsapp.png" class="w-96" />
       </div>
     </div>
   </div>
