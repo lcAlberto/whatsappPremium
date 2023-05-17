@@ -5,6 +5,7 @@ import DefaultFooter from "./components/Layout/Footer.vue";
 </script>
 
 <template>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <div class="flex bg-base-50 p-0">
     <sidebar />
     <div class="flex flex-col flex-1">

@@ -18,14 +18,15 @@ function toggleMessage() {
 </script>
 
 <template>
-  <navbar />
+  <navbar :registered="success" @success="toggleMessage" />
   <div class="p-0 m-0">
     <div
       class="card grid grid-cols-2 items-center justify-items-center gap-3 px-5"
     >
       <div class="prose px-5">
-        {{ success }}
-        <h2 class="text-h2">
+        <img
+          :src="success ? '../../static/check-circle.png' : '../../static/whatsapp.png'" class="my-0" />
+        <h2 class="text-h2 my-3">
           {{ title }}
         </h2>
         <p>

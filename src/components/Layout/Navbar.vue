@@ -4,6 +4,10 @@ import { ref } from 'vue'
 
 let success = ref(false)
 
+const props = defineProps({
+  registered: { type: String, required: true },
+})
+
 function toggleMessage() {
   success.value = false
 }
@@ -15,7 +19,7 @@ function toggleMessage() {
       <div class="prose my-10 px-8">
         <h1 class="">Whatsapp 3C +</h1>
       </div>
-      <custom-button v-if="!success" @success="toggleMessage" />
+      <custom-button v-if="!success && registered" @success="toggleMessage" />
     </div>
   </div>
 </template>
