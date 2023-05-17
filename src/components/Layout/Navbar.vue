@@ -15,7 +15,7 @@ function toggleMessage() {
       <div class="prose my-10 px-8">
         <h1 class="">Whatsapp 3C +</h1>
       </div>
-      <custom-button v-if="!success" @success="toggleMessage" />
+      <custom-button class="hidden md:block" v-if="!success" @success="toggleMessage" />
     </div>
   </div>
 </template>

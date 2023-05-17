@@ -12,8 +12,6 @@ function toggleMessage() {
   title.value = 'Você já está na lista VIP do Whatsapp da 3C Plus'
   subTitle.value = 'Nosso time entrará em contato em breve para mais informações'
   success.value = true;
-  console.log(title)
-  console.log("aki", success);
 }
 </script>
 
@@ -21,10 +19,9 @@ function toggleMessage() {
   <navbar />
   <div class="p-0 m-0">
     <div
-      class="card grid grid-cols-2 items-center justify-items-center gap-3 px-5"
+      class="card grid md:grid-cols-2 items-center justify-items-center gap-3 px-5"
     >
       <div class="prose px-5">
-        {{ success }}
         <h2 class="text-h2">
           {{ title }}
         </h2>
