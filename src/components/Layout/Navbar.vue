@@ -3,6 +3,7 @@ import CustomButton from "../CustomButton.vue";
 import { ref } from 'vue'
 
 let success = ref(false)
+const emit = defineEmits(['hidde'])
 
 const props = defineProps({
   registered: { type: String, required: true },
@@ -10,6 +11,7 @@ const props = defineProps({
 
 function toggleMessage() {
   success.value = false
+  emit('hidde')
 }
 </script>
 
