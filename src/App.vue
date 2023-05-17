@@ -2,6 +2,10 @@
 import Sidebar from "./components/Layout/Sidebar.vue";
 import Content from "./components/Content.vue";
 import DefaultFooter from "./components/Layout/Footer.vue";
+import { onMounted } from 'vue';
+onMounted(() => {
+  document.title = '3C+ Whatsapp';
+});
 </script>
 
 <template>
