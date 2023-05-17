@@ -21,7 +21,7 @@ function toggleMessage() {
   <navbar :registered="success" @success="toggleMessage" />
   <div class="p-0 m-0">
     <div
-      class="card grid grid-cols-2 items-center justify-items-center gap-3 px-5"
+      class="card grid md:grid-cols-2 items-center justify-items-center gap-3 px-5"
     >
       <div class="prose px-5">
         <img
