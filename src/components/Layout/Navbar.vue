@@ -17,9 +17,9 @@ function toggleMessage() {
   <div class="navbar bg-base-100">
     <div class="flex justify-between w-full">
       <div class="prose my-10 px-8">
-        <h1 class="">Whatsapp 3C +</h1>
+        <h1 class="font-RG">Whatsapp 3C +</h1>
       </div>
-      <custom-button v-if="!success && registered" @success="toggleMessage" />
+      <custom-button v-if="!success && !registered" @success="toggleMessage" />
     </div>
   </div>
 </template>

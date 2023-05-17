@@ -26,7 +26,7 @@ function toggleMessage() {
       <div class="prose px-5">
         <img
           :src="success ? '../../static/check-circle.png' : '../../static/whatsapp.png'" class="my-0" />
-        <h2 class="text-h2 my-3">
+        <h2 class="text-h2 my-3 font-cerebri">
           {{ title }}
         </h2>
         <p>

@@ -4,7 +4,14 @@ export default {
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
-  theme: {},
+  theme: {
+    extend: {
+      fontFamily: {
+        custom: ['RG-StandardMedium'],
+        cerebri: ['CerebriSansPro'],
+      },
+    },
+  },
   plugins: [
     require("daisyui"),
     require("@tailwindcss/typography")
