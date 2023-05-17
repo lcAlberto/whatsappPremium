@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-RG {
+  font-family: 'RG-StandardMedium';
+}
+
+@font-face {
+  font-family: 'RG-StandardMedium';
+  font-style: normal;
+  src: local('RG-StandardMedium'), url(./assets/Fonts/RG-StandardMedium.otf) format('truetype');
+}
+@font-face {
+  font-family: 'CerebriSansPro';
+  font-style: normal;
+  src: local('CerebriSansPro'), url(./assets/Fonts/CerebriSansPro-Bold.otf) format('truetype');
+}
