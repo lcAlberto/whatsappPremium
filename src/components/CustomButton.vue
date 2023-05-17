@@ -31,7 +31,8 @@ export default {
     :class="{ 'loading': loading }"
     @click="submit"
   >
-    Quero ter acesso antecipado
+    <span v-if="loading">Enviando...</span>
+    <span v-else>Quero ter acesso antecipado</span>
   </button>
 </template>
 
