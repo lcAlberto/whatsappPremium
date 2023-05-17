@@ -1,7 +1,7 @@
 <script setup lang="js">
-import Sidebar from "./components/Sidebar.vue";
+import Sidebar from "./components/Layout/Sidebar.vue";
 import Content from "./components/Content.vue";
-import DefaultFooter from "./components/Footer.vue";
+import DefaultFooter from "./components/Layout/Footer.vue";
 </script>
 
 <template>
